@@ -1,0 +1,49 @@
+.header{
+    
+    background-color: var(--primary-color);
+    margin-bottom: 50px;
+}
+h4{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    // border-collapse: collapse;
+    border: 1px solid var(--left-navigation-link);
+}
+tr{
+    text-align: center;
+    border: 1px solid  var(--left-navigation-link);
+    margin: 5px 0px;
+
+}
+td,th{
+    border: 1px solid  var(--left-navigation-link);
+
+}
+.dialog-block{
+    position: absolute;
+    top: 50%;
+    right: -10%;
+}
+button{
+    border: none;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--right-navigation-bg);
+    padding: 4px 10px;
+    margin-right: 10px;
+
+}
+div{
+    display: flex;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.p-button{
+}

@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #CD5C5C !important;
+  --primarybg:#F5F5DC;
+  --secondary-bg:#556B2F;
+  --secondary-bg-heighlited:#c0c1c285;
+  --secondary-bg-heighlited-saturated:linear-gradient(139deg, #556B2F -25.82%, #4E622B 50%, #475927 111.5%);
+  --right-navigation:#F5F5DC;
+  --left-navigation:#556B2F;
+  --left-navigation-link:#F5F5DC;
+  --right-navigation-link:#8B4513 ;
+  --right-navigation-bg:#8b451342;
+  --hover-bg:#cd5c5c38;
+  --left-navigation-icon-bg:linear-gradient(139deg, #556B2F -25.82%, #4E622B 50%, #475927 111.5%);
+  --button-bg:#CD5C5C;
+  --button-color:#F5F5DC;
+  --border-color:#CD5C5C ;
+  --accent-color:#8B4513;
+  --selected-bg:#cd5c5c67;
+}
+
+/*# sourceMappingURL=inviting.css.map */

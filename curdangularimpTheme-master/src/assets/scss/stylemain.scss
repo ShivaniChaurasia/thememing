@@ -1,0 +1,37 @@
+// @import "variable.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "common.scss";
+@import 'registrationdta.scss';
+
+// * {
+//   font-family: "NotoSans-Regular";
+// }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: unset;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+.inp-cnt:-webkit-autofill,
+.inp-cnt:-webkit-autofill:hover,
+.inp-cnt:-webkit-autofill:focus,
+.inp-cnt:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #bbc2e4 inset !important;
+}
+
+.custom-tooltip-class {
+  margin-top: -10px;
+}

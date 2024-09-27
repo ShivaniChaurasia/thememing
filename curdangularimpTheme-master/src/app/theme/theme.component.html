@@ -1,0 +1,11 @@
+<p>theme works!</p>
+
+<div class="grid flex " >
+    <div class="theme-images col-2 " *ngFor="let image of theme; let i = index"     [ngClass]="{'active': selectedIndex === i}" 
+     >
+        <div >
+           <img [src]="image.img" alt="" class="img-fluid" srcset="" [ngStyle]="{'border': image.id === selectedIndex ? '2px solid blue' : 'none'}" (click)="selectedImage(image.id)"> {{image.id}} 
+        </div>
+        
+        </div>
+</div>

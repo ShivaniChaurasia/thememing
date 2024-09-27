@@ -1,0 +1,273 @@
+@import "mixins.scss";
+
+.registration_form {
+  background-image: url('../icons/background.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  // background-color: $app-black-11;
+  opacity: 0.7;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.card_customize {
+  width: 450px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 0px;
+  background: transparent;
+  box-shadow: -4px -7px 14px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(2px);
+  padding: 20px;
+}
+
+.num-leg {
+  // background: #bbc2e4;
+  background: transparent;
+  // background: #B1B8E1; #bfc4dd; #BDC1DF;
+
+  // padding: 0px 4px;
+  // transform: translate(23px, -12px);
+  left: 1rem;
+  margin-bottom: 0px;
+  position: absolute;
+  width: auto;
+  border-radius: 5px;
+}
+
+.inp-cnt,
+.calndr_inpt_fld .p-calendar {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  // color: #333;
+  color: #fff;
+  font: normal 500 16px NotoSans-Regular;
+  line-height: 23px;
+}
+
+// .inp-cnt {
+//   color: #273240 !important;
+// }
+
+.inp_cnt_event,
+.calndr_inpt_fld_event .p-calendar {
+  padding: 8px 22px !important;
+
+}
+
+
+.inp-cnt:hover {
+  border: none;
+}
+
+.name-txt {
+  height: 55px;
+  border: 1px solid rgba(112, 112, 112, 0.8);
+  text-align: center;
+  border-radius: 18px;
+}
+
+.inpt-dta {
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  border-radius: 10px;
+
+  .atc-int-tet {
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(112, 112, 112, 0.8);
+    border-radius: 6px;
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.logo_info {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+
+.security_questions {
+  position: absolute;
+  top: 55px;
+  left: 0%;
+  width: 100%;
+  min-height: 209px;
+  overflow-y: auto;
+  background: var(--secondary-bg);
+  // padding: 15px;
+  border-radius: 10px;
+  background: var(--secondary-bg);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.float_label_block {
+  .p-inputtext {
+    background-color: transparent;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #707070;
+    border-radius: 18px;
+    outline: none;
+    box-shadow: none;
+    // padding: 15px 27px;
+    padding: 10px 1rem 0px 1rem;
+    color: #273240;
+    font: normal 400 14px NotoSans-Regular;
+    line-height: 23px;
+  }
+
+  .p-float-label input:focus~label {
+    top: 0.6rem;
+    font-size: 12px;
+    line-height: normal;
+    // background: #bbc2e4;
+    // padding: 0px 4px;
+  }
+
+  .p-float-label>label {
+    left: 1rem;
+    // color: #333;
+    // color: #212529;
+    color: #fff;
+    font-size: 14px;
+    // background: #bbc2e4;
+    // padding: 0px 4px;
+    border-radius: 5px;
+    
+  }
+
+  .p-float-label input.p-filled~label {
+    top: 0.6rem;
+    font-size: 12px;
+    line-height: normal;
+
+  }
+}
+
+.security_questions_info {
+  border-radius: 6px;
+  padding: 7px 10px;
+
+}
+
+.security_questions_info:hover {
+  background: var(--hover-bg);
+  border-radius: 0px !important;
+}
+
+.selected-background {
+  background: var(--selected-bg);
+}
+
+.float_label_block_font {
+   .p-float-label > label {
+    font: normal 500 14px NotoSans-Medium;
+    line-height: normal;
+  }}
+
+@media (max-width:1600px) {
+  .card_customize {
+    width: 450px;
+  }
+
+  .inp-cnt,
+  .calndr_inpt_fld .p-calendar {
+    font: normal 400 14px NotoSans-Regular;
+    line-height: 23px;
+  }
+
+  .inpt-dta .atc-int-tet {
+    font-size: 16px;
+  }
+
+  .float_label_block {
+    .p-inputtext {
+      font: normal 400 14px NotoSans-Regular;
+      // line-height: 23px;
+    }
+  }
+}
+
+// / tab responsive starts here /
+@media only screen and (min-width:768px) and (max-width:1028px){
+  .logo_info{
+    display: none;
+  }
+
+}
+// / tab responsive ends here /
+
+
+// /  mobile responsive starts here /
+@media only screen and (max-width:767px){
+  .card_customize {
+    width: 310px !important;
+    border-radius: 12px !important;
+    padding: 20px 6px !important;
+}
+.logo_info{
+  display: none;
+}
+
+.inpt-dta {
+  width: 30px;
+  height: 35px;
+}
+.inpt-dta .atc-int-tet {
+  font-size: 12px;
+  border-radius: 5px;
+}
+.float_label_block .p-inputtext {
+  height: 45px;
+  border-radius: 8px;
+  padding: 15px 12px;
+  font: normal 400 14px NotoSans-Regular;
+  line-height: 16px;
+}
+.float_label_block {
+  .p-float-label>label {
+    left: 0.5rem;
+  }
+}
+.font_title_mdm_18 {
+  font: normal 500 14px NotoSans-Medium;
+  line-height: normal;
+}
+.name-txt {
+  height: 45px;
+  border-radius: 8px;
+}
+.inp-cnt, .calndr_inpt_fld .p-calendar {
+  padding: 10px 30px;
+}
+.num-leg {
+  transform: translate(7px, -12px);
+}
+.security_questions {
+  min-height: 140px;
+  padding: 10px;
+}
+}
+// /  mobile responsive ends here /

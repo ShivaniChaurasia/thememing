@@ -1,0 +1,230 @@
+// Mixin Files
+@import "variable";
+// @import "./light_mode_variable";
+
+@mixin positionleft($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
+@mixin positionright($top, $right) {
+    position: absolute;
+    top: $top;
+    right: $right;
+}
+
+@mixin positionCenter($top, $left, $right) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    transform: translate(-50%, -50%);
+
+}
+
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexAlignDirection {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexDirection($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+
+}
+
+@mixin flexAround() {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin flexGap($gap) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+
+}
+
+@mixin FontSize {
+    font: normal 400 12px NotoSans-Regular;
+    line-height: 18px;
+}
+
+@mixin SmFont {
+    font: normal 400 16px NotoSans-Regular;
+    line-height: 24px;
+}
+
+@mixin SmFontPc {
+    font: normal 500 16px NotoSans-Medium;
+    line-height: 24px;
+}
+
+@mixin SmFontText {
+    font: normal 400 12px NotoSans-Regular;
+    line-height: 18px;
+}
+
+@mixin SmPric {
+    font: normal 400 14px NotoSans-Regular;
+    line-height: 21px;
+}
+
+@mixin SmPricLatts {
+    font: normal 500 14px NotoSans-Medium;
+    line-height: 21px;
+}
+
+@mixin SmFontTit {
+    font: normal 500 20px NotoSans-Medium;
+    line-height: 30px;
+}
+
+@mixin SmFontbasicTit {
+    font: normal 400 20px NotoSans-Regular;
+    line-height: 30px;
+}
+
+@mixin HeadSize {
+    font: normal 500 24px NotoSans-Medium;
+    line-height: 36px;
+}
+
+@mixin MainHeadSize {
+    font: normal 500 40px NotoSans-Medium;
+    line-height: 60px;
+}
+
+@mixin SmallSize {
+    font: normal 400 16px NotoSans-Regular;
+    line-height: 20px;
+}
+
+@mixin labelSize {
+    font: normal 400 16px NotoSans-Regular;
+    line-height: 24px;
+}
+
+@mixin labelSizeBold {
+    font: normal 500 16px NotoSans-Medium;
+    line-height: 24px;
+}
+
+@mixin SmcSize {
+    font: normal 700 16px NotoSans-Bold;
+    line-height: 24px;
+    color: #232020;
+}
+
+@mixin SmcSizeHead {
+    font: normal 500 18px NotoSans-Medium;
+    line-height: 27px;
+    color: $light_gry;
+}
+
+@mixin SmcSizeHeadCont {
+    font: normal 500 18px NotoSans-Medium;
+    line-height: 27px;
+}
+
+@mixin SHSizeHead {
+    font: normal 600 18px NotoSans-SemiBold;
+    line-height: 27px;
+}
+
+@mixin HeadBtn($width, $padding, $size, $linehet, $fontwgt) {
+    width: $width;
+    border: none;
+    background: rgba(94, 24, 12, 1);
+    border-radius: 21px;
+    color: rgba(255, 255, 255, 1);
+    padding: $padding;
+    font-size: $size;
+    line-height: $linehet;
+    font-weight: $fontwgt;
+}
+
+@mixin AdSize($size, $weight, $lineheght, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $lineheght;
+    color: $color;
+}
+
+@mixin AdGap($gap) {
+    display: flex;
+    gap: $gap;
+    align-items: center;
+}
+
+@mixin AdGapStart($gap) {
+    display: flex;
+    gap: $gap;
+}
+
+@mixin AdFlexBetween() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin FlexAlign() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin FlexWrpGap($gap) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: $gap;
+}
+
+@mixin FlexEnd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@mixin customCheckbox($width, $height) {
+    width: $width;
+    height: $height;
+}
